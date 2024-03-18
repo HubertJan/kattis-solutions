@@ -1,0 +1,21 @@
+4
+hi
+yes
+foo  bar
+hello world
+import sys
+
+
+def print_result(case, result):
+    print(f"Case #{case}: {result}")
+
+def main():
+    numberOfLines = sys.stdin.readline().rstrip()
+    lines = [""] * numberOfLines
+    for i in range(0, numberOfLines):
+        lines[i] = sys.stdin.readline().rstrip()
+        print_result(i, lines[i])
+
+    
+if __name__ == "__main__":
+    main()
