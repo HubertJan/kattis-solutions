@@ -5,7 +5,6 @@ def track_friendships():
     parents = {}
     total_friends = {}
     def find(x):
-        
         if not x in parents.keys():
             parents[x] = x
             total_friends[x] = 1
